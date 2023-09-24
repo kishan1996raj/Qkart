@@ -100,7 +100,9 @@ public class Checkout {
         try {
             // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 07: MILESTONE 6
             WebElement alert = driver.findElement(By.id("notistack-snackbar"));
-            if(alert.isDisplayed()){ 
+            String alertmsg = alert.getText();
+            String msg = "You do not have enough balance in your wallet for this purchase";
+            if(alertmsg.equals(msg)){ 
             return true;
            }
             return false;
