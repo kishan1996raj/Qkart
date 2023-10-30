@@ -39,10 +39,8 @@ public class SearchResult {
 
             // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 04: MILESTONE 2
             // Find the link of size chart in the parentElement and click on it
-           
-            // WebElement sizeChartButton = parentElement.findElement(By.tagName("button"));
-            WebElement sizeChart = parentElement.findElement(By.xpath("//button[text()='Size chart']"));
-            sizeChart.click();
+            WebElement sizeChartButton = parentElement.findElement(By.xpath("//button[contains(text(), 'ize')]"));
+            sizeChartButton.click();
             Thread.sleep(2000);
             return true;
         } catch (Exception e) {
@@ -82,20 +80,17 @@ public class SearchResult {
              * the element is "SIZE CHART". If the text "SIZE CHART" matches for the
              * element, set status = true , else set to false
              */
-            System.out.println("hi");
-            WebElement sizeChart = parentElement.findElement(By.xpath("//button[text()='Size chart']"));
-            if(sizeChart.isDisplayed()){
-                System.out.println(sizeChart.getText());
-                if(sizeChart.getText().toUpperCase().equals("SIZE CHART")){
-                    status = true;
-                }
-            }
-            Thread.sleep(2000);
-            System.out.println(status);
+            // System.out.println("hi");
+            // WebElement sizeChart = parentElement.findElement(By.xpath("//button[contains(text(), 'SIZE CHART')]"));
+            // if(sizeChart.isDisplayed()){
+            //     System.out.println(sizeChart.getText());
+            //     if(sizeChart.getText().toUpperCase().equals("SIZE CHART")){
+            //         status = true;
+            //     }
+            // }
+            WebElement element = parentElement.findElement(By.tagName("button"));
+            status = element.getText().equals("SIZE CHART");
             return status;
-            // WebElement element = parentElement.findElement(By.xpath("//button[text()='Size chart']"));
-            // status = element.getText().equals("SIZE CHART");
-            // return status;
         } catch (Exception e) {
             return status;
         }
@@ -109,9 +104,11 @@ public class SearchResult {
             WebDriver driver) {
         Boolean status = true;
         try {
+            // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 04: MILESTONE 2
            /* 
-            /*
+             * Locate the table element when the size chart modal is open
              * 
+             * Validate that the contents of expectedTableHeaders is present as the table
              * header in the same order
              * 
              * Validate that the contents of expectedTableBody are present in the table body

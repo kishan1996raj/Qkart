@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 
 public class Login {
     RemoteWebDriver driver;
@@ -48,9 +47,8 @@ public class Login {
         login_button.click();
 
         // Wait for Login action to complete
-        FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout((Duration.ofSeconds(20L)))
-        .pollingEvery(Duration.ofMillis(250));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//button[text()='Login to QKart']")));
+        Thread.sleep(5000);
+
         return this.VerifyUserLoggedIn(Username);
     }
 
@@ -59,7 +57,6 @@ public class Login {
             // Find the username label (present on the top right of the page)
             WebElement username_label;
             username_label = this.driver.findElement(By.className("username-text"));
-            Thread.sleep(2000);
             return username_label.getText().equals(Username);
         } catch (Exception e) {
             return false;

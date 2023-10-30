@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -58,18 +57,15 @@ public class Register {
         confirm_password_txt_box.sendKeys(test_data_password);
 
         // Find the register now button
-        WebElement register_now_button = this.driver.findElement(By.className("button"));
-
+        WebDriverWait waitExplictly = new WebDriverWait(driver,20);
+        WebElement register_now_button =   waitExplictly.until(ExpectedConditions.presenceOfElementLocated(By.className("button")));
+       
         // Click the register now button
         register_now_button.click();
         // Wait for registration to complete
-       // Thread.sleep(3000);
+        WebDriverWait waitExplictly = new WebDriverWait(driver,20);
+        waitExplictly.until(ExpectedConditions.urlContains("/login"));
 
-        // SLEEP_STMT_06: Wait for new user to get created in the backend
-       WebDriverWait wait = new WebDriverWait(driver,5);
-       ExpectedCondition<Boolean> urlCondition = ExpectedConditions.urlContains("/login");
-       ExpectedCondition<WebElement> regFailedAlert = ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Username already exists']"));
-       wait.until(ExpectedConditions.or(urlCondition,regFailedAlert));
 
         this.lastGeneratedUsername = test_data_username;
 

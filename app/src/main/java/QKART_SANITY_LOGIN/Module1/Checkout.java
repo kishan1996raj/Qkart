@@ -1,5 +1,6 @@
 package QKART_SANITY_LOGIN.Module1;
 
+import java.sql.Driver;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -29,15 +30,21 @@ public class Checkout {
         try {
             // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 05: MILESTONE 4
             /*
-             * Click on the "Add new address" button, enter the addressString in the address
-             * text box and click on the "ADD" button to save the address
+             * Click on the "Add new address" button, enter the addressString in the address text
+             * box and click on the "ADD" button to save the address
              */
-            WebElement addNewAdressButton = driver.findElement(By.xpath("//button[text()='Add new address']"));
-            if(addNewAdressButton.isEnabled()){
+            WebElement addNewAdressButton =
+                    driver.findElement(By.xpath("//button[text()='Add new address']"));
+            if (addNewAdressButton.isEnabled()) {
                 addNewAdressButton.click();
-                driver.findElement(By.xpath(("//textarea[@placeholder='Enter your complete address']"))).sendKeys(addresString);
+                driver.findElement(
+                        By.xpath(("//textarea[@placeholder='Enter your complete address']")))
+                        .sendKeys(addresString);
                 driver.findElement(By.xpath("//button[text()='Add']")).click();
-                
+                WebDriverWait wait = new WebDriverWait(driver, 5);
+                wait.until(ExpectedConditions
+                        .presenceOfElementLocated(By.xpath("//p[text()='" + addresString + "']")));
+
                 return true;
             }
             return false;
@@ -55,19 +62,20 @@ public class Checkout {
         try {
             // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 05: MILESTONE 4
             /*
-             * Iterate through all the address boxes to find the address box with matching
-             * text, addressToSelect and click on it
+             * Iterate through all the address boxes to find the address box with matching text,
+             * addressToSelect and click on it
              */
-           WebElement clickAddress =  driver.findElement(By.xpath("//input[@name='address']"));
-           if(clickAddress.isEnabled()){
-            clickAddress.click();
-            return true;
-           }
+            WebElement clickAddress = driver.findElement(By.xpath("//input[@name='address']"));
+            if (clickAddress.isEnabled()) {
+                clickAddress.click();
+                return true;
+            }
 
             System.out.println("Unable to find the given address");
             return false;
         } catch (Exception e) {
-            System.out.println("Exception Occurred while selecting the given address: " + e.getMessage());
+            System.out.println(
+                    "Exception Occurred while selecting the given address: " + e.getMessage());
             return false;
         }
 
@@ -80,11 +88,12 @@ public class Checkout {
         try {
             // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 05: MILESTONE 4
             // Find the "PLACE ORDER" button and click on it
-            WebElement placeOrderButton = driver.findElement(By.xpath("//button[text()='PLACE ORDER']"));
-           if(placeOrderButton.isEnabled()){
-            placeOrderButton.click();
-            return true;
-           }
+            WebElement placeOrderButton =
+                    driver.findElement(By.xpath("//button[text()='PLACE ORDER']"));
+            if (placeOrderButton.isEnabled()) {
+                placeOrderButton.click();
+                return true;
+            }
             return false;
 
         } catch (Exception e) {
@@ -102,13 +111,55 @@ public class Checkout {
             WebElement alert = driver.findElement(By.id("notistack-snackbar"));
             String alertmsg = alert.getText();
             String msg = "You do not have enough balance in your wallet for this purchase";
-            if(alertmsg.equals(msg)){ 
-            return true;
-           }
+            if (alertmsg.equals(msg)) {
+                return true;
+            }
             return false;
         } catch (Exception e) {
-            System.out.println("Exception while verifying insufficient balance message: " + e.getMessage());
+            System.out.println(
+                    "Exception while verifying insufficient balance message: " + e.getMessage());
             return false;
         }
     }
+
+    public boolean verifyAdvertisement(int i) {
+        boolean status = false;
+        try {
+            driver.switchTo().frame(i);
+            if (i <= 1) {
+               
+                WebElement addToCartButton = driver.findElement(By.xpath("//button[text()='View Cart']"));
+                Thread.sleep(2000);
+                addToCartButton.click();
+                driver.switchTo().defaultContent();
+                driver.navigate().back();
+                driver.switchTo().frame(i);
+                WebElement buyNowButton = driver.findElement(By.xpath("//button[text()='Buy Now']"));
+                Thread.sleep(2000);
+                buyNowButton.click();
+                Thread.sleep(2000);
+                status= true;
+            }
+
+            else {
+                WebElement covid19 = driver.findElement(By.xpath("//div[text()='COVID-19']"));
+                if (covid19.isDisplayed()) {
+                    status = true;
+                }
+            }
+            driver.navigate().back();
+            Thread.sleep(2000);
+            driver.switchTo().parentFrame();
+            return status;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+
+
+    }
+
+
+
 }
