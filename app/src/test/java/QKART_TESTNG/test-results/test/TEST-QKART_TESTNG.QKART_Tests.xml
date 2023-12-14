@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="QKART_TESTNG.QKART_Tests" tests="10" skipped="0" failures="1" errors="0" timestamp="2023-12-14T20:51:22" hostname="kishan1996raj" time="388.631">
+  <properties/>
+  <testcase name="TestCase01[0](testuser, abc123)" classname="QKART_TESTNG.QKART_Tests" time="12.277"/>
+  <testcase name="TestCase02" classname="QKART_TESTNG.QKART_Tests" time="35.401"/>
+  <testcase name="TestCase03" classname="QKART_TESTNG.QKART_Tests" time="35.278"/>
+  <testcase name="TestCase04" classname="QKART_TESTNG.QKART_Tests" time="19.046"/>
+  <testcase name="TestCase05[0](YONEX Smash Badminton Racquet, Tan Leatherette Weekender Duffle, Addr line 1 addr Line 2 addr line 3)" classname="QKART_TESTNG.QKART_Tests" time="28.067"/>
+  <testcase name="TestCase06[0](Xtend Smart Watch, Yarine Floor Lamp)" classname="QKART_TESTNG.QKART_Tests" time="34.918"/>
+  <testcase name="TestCase07[0](Stylecon 9 Seater RHS Sofa Set, 60)" classname="QKART_TESTNG.QKART_Tests" time="174.442"/>
+  <testcase name="TestCase08" classname="QKART_TESTNG.QKART_Tests" time="7.828">
+    <failure message="java.lang.AssertionError: Test Case 8: Verify that product added to cart is available when a new tab is opened Failed " type="java.lang.AssertionError">java.lang.AssertionError: Test Case 8: Verify that product added to cart is available when a new tab is opened Failed 
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at QKART_TESTNG.QKART_Tests.TestCase08(QKART_Tests.java:420)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase name="TestCase09" classname="QKART_TESTNG.QKART_Tests" time="10.015"/>
+  <testcase name="TestCase11" classname="QKART_TESTNG.QKART_Tests" time="25.95"/>
+  <system-out><![CDATA[Test Execution Started
+2023-12-15T02:21:22.507662 |  Start TestCase  |  Test Case 1: Verify User Registration | DONE
+2023-12-15T02:21:34.170017 |  Test Step  |  User Perform Login:  | PASS
+Test Passed
+Test Execution Started
+2023-12-15T02:21:36.048297 |  Start Testcase  |  Test Case 2: Verify User Registration with an existing username  | DONE
+2023-12-15T02:21:39.196555 |  Test Step  |  User Registration :  | PASS
+Test Passed
+Test Execution Started
+2023-12-15T02:22:12.094249 |  TestCase 3  |  Start tlest case : Vero inify functionality of search box  | DONE
+2023-12-15T02:22:16.276842 |  Step Success  |  Successfully validated the search results  | PASS
+Error while searching for a product: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class='MuiCardContent-root css-1qw96cp'][1]/p[contains(text(),'Gesundheit')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'kishan1996raj', ip: '192.168.83.200', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-1023-aws', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /tmp/.com.google.Chrome.UvtK2P}, goog:chromeOptions: {debuggerAddress: localhost:45765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2d5dd45b00e2a17007c2ce64e8c...}
+Session ID: 2d5dd45b00e2a17007c2ce64e8ca55cd
+2023-12-15T02:22:46.774751 |  TestCase 3  |  Test Case PASS. Verified that no search results were found for the given text | PASS
+Test Passed
+Test Execution Started
+2023-12-15T02:22:47.858696 |  TestCase 4  |  Start test case : Verify the presence of size Chart | DONE
+Step success : Successfully validated presence of Size Chart Link
+Step Success : Validated presence of drop down for the product Roadster Mens Running Shoes
+Step Success Successfully validated contents of Size Chart Link for the product Roadster Mens Running Shoes
+Step success : Successfully validated presence of Size Chart Link
+Step Success : Validated presence of drop down for the product Nike Mens Running Shoes
+Step Success Successfully validated contents of Size Chart Link for the product Nike Mens Running Shoes
+2023-12-15T02:23:06.438385 |  TestCase 4  |  End Test Case: Validated  of the Size Chart and the details Details | Pass
+Test Passed
+Test Execution Started
+2023-12-15T02:23:07.499956 |  Start TestCase  |  Test Case 5: Verify Happy Flow of buying products | DONE
+2023-12-15T02:23:35.044692 |  End TestCase  |  Test Case 5: Happy Flow Test Completed :  | PASS
+Test Passed
+Test Execution Started
+2023-12-15T02:23:36.362078 |  Start TestCase  |  Test Case 6: Verify that cart can be edited | DONE
+2023-12-15T02:24:10.723513 |  End TestCase  |  Test Case 6: Verify that cart can be edited:  | PASS
+Test Passed
+Test Execution Started
+2023-12-15T02:24:12.051220 |  Start TestCase  |  Test Case 7: Verify that insufficient balance error is thrown when the wallet balance is not enough | DONE
+Exception while performing add to cart: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@class='MuiBox-root css-1gjj37g']/div[1][text()='Stylecon 9 Seater RHS Sofa Set'] (tried for 30 second(s) with 500 milliseconds interval)
+2023-12-15T02:27:05.914159 |  End TestCase  |  Test Case 7: Verify that insufficient balance error is thrown when the wallet balance is not enough:  | PASS
+Test Passed
+Test Execution Started
+2023-12-15T02:27:06.414390 |  Start TestCase  |  Test Case 8: Verify that product added to cart is available when a new tab is opened | DONE
+TestQ Failed
+Test Execution Started
+2023-12-15T02:27:15.601369 |  Start TestCase  |  Test Case 09: Verify that the Privacy Policy, About Us are displayed correctly  | DONE
+2023-12-15T02:27:24.847709 |  End TestCase  |  Test Case 9: Verify that the Privacy Policy, About Us are displayed correctly  | PASS
+Test Passed
+Test Execution Started
+2023-12-15T02:27:25.158751 |  Start TestCase  |  Test Case 11: Ensure that the links on the QKART advertisement are clickable | DONE
+2023-12-15T02:27:47.224777 |  Step   |  Verify that 3 Advertisements are available | PASS
+2023-12-15T02:27:47.439045 |  Step   |  Verify that Advertisement 1 is clickable  | PASS
+2023-12-15T02:27:50.953998 |  Step   |  Verify that Advertisement 2 is clickable  | PASS
+2023-12-15T02:27:50.955812 |  End TestCase  |  Test Case 11:  Ensure that the links on the QKART advertisement are clickable | PASS
+Test Passed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,40 @@
+^2023-12-11T12:16:34.855001 |  Start TestCase  |  Test Case 1: Verify User Registration | DONE
+H2023-12-11T12:16:45.084294 |  Test Step  |  User Perform Login:  | FAIL
+y2023-12-11T12:16:45.095737 |  Start Testcase  |  Test Case 2: Verify User Registration with an existing username  | DONE
+H2023-12-11T12:16:48.368108 |  Test Step  |  User Registration :  | PASS
+j2023-12-11T12:17:20.255802 |  TestCase 3  |  Start test case : Verify functionality of search box  | DONE
+a2023-12-11T12:17:24.380691 |  Step Success  |  Successfully validated the search results  | PASS
+àError while searching for a product: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class='MuiCardContent-root css-1qw96cp'][1]/p[contains(text(),'Gesundheit')] (tried for 30 second(s) with 500 milliseconds interval)
+ZBuild info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+îSystem info: host: 'kishan1996raj', ip: '192.168.83.200', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-1023-aws', java.version: '11.0.19'
+8Driver info: org.openqa.selenium.remote.RemoteWebDriver
+ØCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /tmp/.com.google.Chrome.PMi4HR}, goog:chromeOptions: {debuggerAddress: localhost:40147}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3a56cac7112210aa7430e7f9ff7...}
+-Session ID: 3a56cac7112210aa7430e7f9ff7489fb
+Ç2023-12-11T12:17:55.233460 |  TestCase 3  |  Test Case PASS. Verified that no search results were found for the given text | PASS
+h2023-12-11T12:17:55.248266 |  TestCase 4  |  Start test case : Verify the presence of size Chart | DONE
+BStep success : Successfully validated presence of Size Chart Link
+[Step Success : Validated presence of drop down for the product Roadster Mens Running Shoes
+lStep Success Successfully validated contents of Size Chart Link for the product Roadster Mens Running Shoes
+BStep success : Successfully validated presence of Size Chart Link
+WStep Success : Validated presence of drop down for the product Nike Mens Running Shoes
+hStep Success Successfully validated contents of Size Chart Link for the product Nike Mens Running Shoes
+x2023-12-11T12:18:17.562933 |  TestCase 4  |  End Test Case: Validated  of the Size Chart and the details Details | Pass
+j2023-12-11T12:18:17.573671 |  Start TestCase  |  Test Case 5: Verify Happy Flow of buying products | DONE
+`2023-12-11T12:18:44.905644 |  End TestCase  |  Test Case 5: Happy Flow Test Completed :  | PASS
+d2023-12-11T12:18:44.911055 |  Start TestCase  |  Test Case 6: Verify that cart can be edited | DONE
+d2023-12-11T12:19:13.856088 |  End TestCase  |  Test Case 6: Verify that cart can be edited:  | PASS
+ú2023-12-11T12:19:13.876061 |  Start TestCase  |  Test Case 7: Verify that insufficient balance error is thrown when the wallet balance is not enough | DONE
+ú2023-12-11T12:19:58.717722 |  End TestCase  |  Test Case 7: Verify that insufficient balance error is thrown when the wallet balance is not enough:  | PASS
+	ç2023-12-11T12:19:58.719362 |  Start TestCase  |  Test Case 8: Verify that product added to cart is available when a new tab is opened | DONE
+	ã2023-12-11T12:20:17.962104 |  End TestCase  |  Test Case 8: Verify that product added to cart is available when a new tab is opened | PASS
+
+à2023-12-11T12:20:17.963736 |  Start TestCase  |  Test Case 09: Verify that the Privacy Policy, About Us are displayed correctly  | DONE
+
+Ö2023-12-11T12:20:26.216856 |  End TestCase  |  Test Case 9: Verify that the Privacy Policy, About Us are displayed correctly  | PASS
+z2023-12-11T12:20:26.218335 |  Start TestCase  |  Test Case 10: Verify that contact us option is working correctly  | DONE
+x2023-12-11T12:20:28.512447 |  End TestCase  |  Test Case 10: Verify that contact us option is working correctly  | PASS
+Ö2023-12-11T12:20:28.513784 |  Start TestCase  |  Test Case 11: Ensure that the links on the QKART advertisement are clickable | DONE
+Z2023-12-11T12:20:49.211254 |  Step   |  Verify that 3 Advertisements are available | PASS
+Y2023-12-11T12:20:49.412525 |  Step   |  Verify that Advertisement 1 is clickable  | PASS
+Y2023-12-11T12:20:52.984776 |  Step   |  Verify that Advertisement 2 is clickable  | PASS
+Ñ2023-12-11T12:20:52.987032 |  End TestCase  |  Test Case 11:  Ensure that the links on the QKART advertisement are clickable | PASS

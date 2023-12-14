@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="11" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-15T02:21:22 IST" name="QA_V2" finished-at="2023-12-15T02:27:51 IST" duration-ms="388911">
+    <groups>
+      <group name="Sanity">
+        <method signature="QKART_Tests.TestCase01(java.lang.String,java.lang.String)[pri:1, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase01" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase02()[pri:2, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase02" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase03()[pri:3, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase03" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase05(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase05" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase07(java.lang.String,int)[pri:7, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase07" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase11()[pri:11, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase11" class="QKART_TESTNG.QKART_Tests"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="QKART_Tests.TestCase04()[pri:4, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase04" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase06(java.lang.String,java.lang.String)[pri:6, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase06" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase08()[pri:8, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase08" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase09()[pri:9, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase09" class="QKART_TESTNG.QKART_Tests"/>
+        <method signature="QKART_Tests.TestCase11()[pri:11, instance:QKART_TESTNG.QKART_Tests@63317c4a]" name="TestCase11" class="QKART_TESTNG.QKART_Tests"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2023-12-15T02:21:22 IST" name="Parameterisation of the test cases using testng" finished-at="2023-12-15T02:27:51 IST" duration-ms="388911">
+      <class name="QKART_TESTNG.QKART_Tests">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:21:19 IST" name="createDriver" finished-at="2023-12-15T02:21:22 IST" duration-ms="3160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:21:22 IST" name="TestCase01" description="Verify registration happens correctly" finished-at="2023-12-15T02:21:34 IST" duration-ms="12277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method signature="TestCase02()[pri:2, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:21:35 IST" name="TestCase02" description="Verify User Registration with an existing username" finished-at="2023-12-15T02:22:10 IST" duration-ms="35401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method signature="TestCase03()[pri:3, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:22:11 IST" name="TestCase03" description="Verify functionality of search box" finished-at="2023-12-15T02:22:46 IST" duration-ms="35278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method signature="TestCase04()[pri:4, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:22:47 IST" name="TestCase04" description="Verify the presence of size Chart" finished-at="2023-12-15T02:23:06 IST" duration-ms="19046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+        <test-method signature="TestCase05(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:23:06 IST" name="TestCase05" description="Verify Happy Flow of buying products" finished-at="2023-12-15T02:23:35 IST" duration-ms="28067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[YONEX Smash Badminton Racquet]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tan Leatherette Weekender Duffle]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Addr line 1 addr Line 2 addr line 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase05 -->
+        <test-method signature="TestCase06(java.lang.String,java.lang.String)[pri:6, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:23:35 IST" name="TestCase06" description="Test Case 6: Verify that cart can be edited" finished-at="2023-12-15T02:24:10 IST" duration-ms="34918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xtend Smart Watch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yarine Floor Lamp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase06 -->
+        <test-method signature="TestCase07(java.lang.String,int)[pri:7, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:24:11 IST" name="TestCase07" description="Verify that insufficient balance error is thrown when the wallet balance is not enough" finished-at="2023-12-15T02:27:05 IST" duration-ms="174442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stylecon 9 Seater RHS Sofa Set]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase07 -->
+        <test-method signature="TestCase08()[pri:8, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:27:06 IST" name="TestCase08" description=" Verify that product added to cart is available when a new tab is opened" finished-at="2023-12-15T02:27:14 IST" duration-ms="7828" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Case 8: Verify that product added to cart is available when a new tab is opened Failed ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Case 8: Verify that product added to cart is available when a new tab is opened Failed 
+at org.junit.Assert.fail(Assert.java:88)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at QKART_TESTNG.QKART_Tests.TestCase08(QKART_Tests.java:420)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+at com.sun.proxy.$Proxy2.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase08 -->
+        <test-method signature="TestCase09()[pri:9, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:27:14 IST" name="TestCase09" description="Verify that the Privacy Policy, About Us are displayed correctly" finished-at="2023-12-15T02:27:24 IST" duration-ms="10015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase09 -->
+        <test-method signature="TestCase11()[pri:11, instance:QKART_TESTNG.QKART_Tests@63317c4a]" started-at="2023-12-15T02:27:25 IST" name="TestCase11" description="Ensure that the Advertisement Links on the QKART page are clickable" finished-at="2023-12-15T02:27:50 IST" duration-ms="25950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase11 -->
+      </class> <!-- QKART_TESTNG.QKART_Tests -->
+    </test> <!-- Parameterisation of the test cases using testng -->
+  </suite> <!-- QA_V2 -->
+</testng-results>

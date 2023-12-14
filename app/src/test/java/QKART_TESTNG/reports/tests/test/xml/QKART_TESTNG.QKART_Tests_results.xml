@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Parameterisation of the test cases using testng"
+           tests="10"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="383.222">
+    <properties></properties>
+
+            <testcase
+                name="TestCase08"
+                time="7.828"
+                classname="QKART_TESTNG.QKART_Tests">
+
+            <failure type="java.lang.AssertionError" message="Test Case 8: Verify that product added to cart is available when a new tab is opened Failed ">
+                <![CDATA[java.lang.AssertionError: Test Case 8: Verify that product added to cart is available when a new tab is opened Failed 
+                org.junit.Assert.fail(Assert.java:88)org.junit.Assert.assertTrue(Assert.java:41)QKART_TESTNG.QKART_Tests.TestCase08(QKART_Tests.java:420)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1541)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)com.sun.proxy.$Proxy2.stop(Unknown Source)org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </failure>
+    </testcase>
+
+
+            <testcase
+                name="TestCase05"
+                time="28.067"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase09"
+                time="10.015"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase11"
+                time="25.950"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase02"
+                time="35.401"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase03"
+                time="35.278"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase06"
+                time="34.918"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase01"
+                time="12.277"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase04"
+                time="19.046"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+            <testcase
+                name="TestCase07"
+                time="174.442"
+                classname="QKART_TESTNG.QKART_Tests">
+            </testcase>
+</testsuite>
